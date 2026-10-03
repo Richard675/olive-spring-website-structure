@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact Us | Olive Sprigs Health Solutions</title>
+  <meta name="description" content="Request in-home care or ask a question. Call 336-329-2695, email info@olivesprigshealthsolutions.com, or visit 500 South Main Street, Suite 300, Burlington, NC 27215.">
+  <meta name="theme-color" content="#222c15">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Olive Sprigs Health Solutions">
+  <meta property="og:title" content="Contact Us | Olive Sprigs Health Solutions">
+  <meta property="og:description" content="Request in-home care or ask a question. Call 336-329-2695, email info@olivesprigshealthsolutions.com, or visit 500 South Main Street, Suite 300, Burlington, NC 27215.">
+  <meta property="og:image" content="assets/images/hero-care.jpg">
+  <link rel="icon" href="assets/images/logo-mark.png" type="image/png">
+  <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="script.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="topbar" role="region" aria-label="Phone and email">
+    <div class="wrap">
+      <p class="topbar-location">Serving families across Central North Carolina</p>
+      <p class="topbar-contact"><a href="tel:+13363292695"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.8-2.4 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.4 4.8 1.8V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg><span>336-329-2695</span></a><a class="topbar-email" href="mailto:info@olivesprigshealthsolutions.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg><span>info@<wbr>olivesprigshealthsolutions.com</span></a></p>
+    </div>
+  </div>
+
+  <!-- 01. Shared header & navigation -->
+  <header class="header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Olive Sprigs Health Solutions, home">
+        <img src="assets/images/logo-mark.webp" alt="" width="240" height="236">
+        <span class="brand-name">Olive Sprigs<small>Health Solutions</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>
+        <svg class="icon icon-menu" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h10"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg><span class="menu-label">Menu</span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="service-areas.html">Service Areas</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <a class="button button-sm" href="contact.html">Request Care</a>
+        <div class="nav-extra">
+          <a href="tel:+13363292695">Call 336-329-2695</a>
+          <a href="mailto:info@olivesprigshealthsolutions.com">info@<wbr>olivesprigshealthsolutions.com</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero-compact">
+      <div class="wrap page-hero-inner">
+        <div>
+          <ol class="breadcrumb" aria-label="Breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+          <p class="eyebrow">Contact us</p>
+          <h1>Tell us how <em>we can help.</em></h1>
+          <p class="lead">Whether care is needed now or you are planning ahead, we are ready to listen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap contact-grid" style="padding-top:clamp(40px,5vw,64px)" aria-label="Contact Olive Sprigs">
+      <div class="form-card">
+        <form id="inquiry-form" data-success="#form-success" action="api/contact.php" method="post" data-ajax-form data-busy="Sending your request…" data-preset-service>
+          <p class="eyebrow">Request information</p>
+          <h2>How can we support you?</h2>
+          <p class="form-intro">Share a few details and our team will reach out. Fields marked <span class="req" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="first-name">First name <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="first-name" name="first_name" autocomplete="given-name" required maxlength="60" aria-describedby="first-name-error">
+              <span class="field-error" id="first-name-error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.3v.1"/></svg><span></span></span>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="last-name" name="last_name" autocomplete="family-name" required maxlength="60" aria-describedby="last-name-error">
+              <span class="field-error" id="last-name-error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.3v.1"/></svg><span></span></span>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="email" name="email" type="email" inputmode="email" autocomplete="email" required maxlength="200" spellcheck="false" aria-describedby="email-error">
+              <span class="field-error" id="email-error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.3v.1"/></svg><span></span></span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="40" aria-describedby="phone-hint phone-error">
+              <span class="hint" id="phone-hint">We’ll call to talk through your needs.</span>
+              <span class="field-error" id="phone-error"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.3v.1"/></svg><span></span></span>
+            </div>
+            <div class="field">
+              <label for="county">County where care is needed <span class="optional">(optional)</span></label>
+              <select class="input select" id="county" name="county"><option value="">Select a county</option><option value="Alamance">Alamance County</option><option value="Guilford">Guilford County</option><option value="Orange">Orange County</option><option value="Durham">Durham County</option><option value="Wake">Wake County</option><option value="Chatham">Chatham County</option><option value="Randolph">Randolph County</option><option value="Caswell">Caswell County</option><option value="Person">Person County</option><option value="Forsyth">Forsyth County</option><option value="Granville">Granville County</option><option value="Vance">Vance County</option><option value="Johnston">Johnston County</option><option value="Franklin">Franklin County</option><option value="Other">Other / not sure</option></select>
+            </div>
+            <div class="field">
+              <label for="service">Service of interest <span class="optional">(optional)</span></label>
+              <select class="input select" id="service" name="service"><option value="">Not sure yet</option><option value="Alzheimer’s & Dementia Home Care" data-key="dementia">Alzheimer’s &amp; Dementia Home Care</option><option value="Post-Surgical Care" data-key="post-surgical">Post-Surgical Care</option><option value="Assisted Living Home Services" data-key="assisted-living">Assisted Living Home Services</option><option value="Private Duty Nursing" data-key="private-duty-nursing">Private Duty Nursing</option><option value="Chronic Illness Management" data-key="chronic-illness">Chronic Illness Management</option><option value="Disability Care" data-key="disability">Disability Care</option><option value="Adult Care Home" data-key="adult-care-home">Adult Care Home</option><option value="Non-Medical Home Care" data-key="non-medical">Non-Medical Home Care</option><option value="Pediatric Care" data-key="pediatric">Pediatric Care</option></select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">How can we help? <span class="optional">(optional)</span></label>
+            <textarea class="input" id="message" name="message" rows="5" maxlength="2000" placeholder="Tell us a little about the care or support you are looking for." aria-describedby="message-count" data-counter="#message-count"></textarea>
+            <div class="field-foot"><span></span><span class="counter" id="message-count">0 / 2000</span></div>
+          </div>
+
+          <div class="honeypot" aria-hidden="true"><label for="website">Leave this blank</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+
+          <p class="privacy-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg><span>Please do not submit urgent medical information through this form. For emergencies, call 911.</span></p>
+
+          <div class="form-actions">
+            <button class="button" type="submit"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 3 10 14M21 3l-6.5 18-4.5-7-7-4.5z"/></svg><span class="button-label">Send Request</span></button>
+            <p class="fine">Or call us at <a href="tel:+13363292695">336-329-2695</a></p>
+          </div>
+
+          <div class="alert alert-error" id="form-error" role="alert" hidden><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5.5M12 16.3v.1"/></svg><div><strong>We couldn’t send your request.</strong> <span class="alert-message"></span> Your details are still here, so you can try again. You can also call <a href="tel:+13363292695">336-329-2695</a> or email <a href="mailto:info@olivesprigshealthsolutions.com">info@<wbr>olivesprigshealthsolutions.com</a>.</div></div>
+          <p id="form-status" class="visually-hidden form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="form-success" id="form-success" tabindex="-1" hidden>
+          <div class="success-mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></div>
+          <h2>Thank you<span class="success-name"></span>.</h2>
+          <p class="success-message">Your request has been sent. A member of our team will contact you soon.</p>
+          <p class="fine">If you need help sooner, call <a href="tel:+13363292695">336-329-2695</a>.</p>
+          <div class="button-row"><a class="button button-ghost" href="services.html">Explore our services</a></div>
+        </div>
+      </div>
+
+      <aside class="contact-aside" aria-label="Contact details">
+        <div class="info-card">
+          <h2>Start a caring conversation</h2>
+          <ul class="info-list">
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.8-2.4 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.4 4.8 1.8V19a2 2 0 0 1-2 2A16.5 16.5 0 0 1 3 5.5a2 2 0 0 1 2-2z"/></svg></span><div><span class="label">Phone</span><a href="tel:+13363292695">336-329-2695</a></div></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span><div><span class="label">Email</span><a href="mailto:info@olivesprigshealthsolutions.com">info@<wbr>olivesprigshealthsolutions.com</a></div></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.1-7-11.3a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.7" r="2.5"/></svg></span><div><span class="label">Office</span><address>500 South Main Street<br>3rd Floor, Suite 300<br>Burlington, NC 27215</address><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=500+South+Main+Street+Suite+300+Burlington+NC+27215" target="_blank" rel="noopener noreferrer">Get directions<span class="visually-hidden"> (opens in a new tab)</span> <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></li>
+            <li><span class="icon-wrap"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 4-5.5 2v14L9 18l6 2 5.5-2V4L15 6z"/><path d="M9 4v14M15 6v14"/></svg></span><div><span class="label">Service area</span><span>14 counties across Central North Carolina. <a href="service-areas.html">See the list</a></span></div></li>
+          </ul>
+        </div>
+        <div class="info-card dark">
+          <h2>What happens next</h2>
+          <ol class="mini-steps">
+            <li><span><strong>We talk with you</strong>We learn what is happening and what matters most to your family.</span></li>
+            <li><span><strong>We personalize the plan</strong>Routines, preferences, schedules, and the right services.</span></li>
+            <li><span><strong>Care begins</strong>With ongoing communication as needs change.</span></li>
+          </ol>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- 04. Shared footer -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/images/logo-full.webp" alt="Olive Sprigs Health Solutions" width="356" height="420" loading="lazy" decoding="async">
+          <p>Compassionate, personalized support designed to promote comfort, dignity, and independence at home.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="service-areas.html">Service Areas</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h2>Care services</h2>
+          <ul>
+            <li><a href="services.html#dementia">Alzheimer’s &amp; Dementia Home Care</a></li>
+            <li><a href="services.html#post-surgical">Post-Surgical Care</a></li>
+            <li><a href="services.html#assisted-living">Assisted Living Home Services</a></li>
+            <li><a href="services.html#private-duty-nursing">Private Duty Nursing</a></li>
+            <li><a href="services.html#chronic-illness">Chronic Illness Management</a></li>
+            <li><a href="services.html#disability">Disability Care</a></li>
+            <li><a href="services.html">All services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <address>500 South Main Street<br>3rd Floor, Suite 300<br>Burlington, NC 27215</address>
+          <ul>
+            <li><a href="tel:+13363292695">336-329-2695</a></li>
+            <li><a href="mailto:info@olivesprigshealthsolutions.com">info@<wbr>olivesprigshealthsolutions.com</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=500+South+Main+Street+Suite+300+Burlington+NC+27215" target="_blank" rel="noopener noreferrer">Get directions<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Olive Sprigs Health Solutions LLC. All rights reserved.</p>
+        <p>In an emergency, call 911.</p>
+        <a class="to-top" href="#top">Back to top <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
